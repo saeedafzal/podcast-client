@@ -1,4 +1,3 @@
-import React from "react";
 import ReactDOM from "react-dom/client";
 import Layout from "./component/layout.tsx";
 
@@ -9,8 +8,4 @@ if (!root) {
 }
 
 // React.
-ReactDOM.createRoot(root).render(
-    <React.StrictMode>
-        <Layout/>
-    </React.StrictMode>
-);
+ReactDOM.createRoot(root).render(<Layout/>);

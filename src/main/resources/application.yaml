@@ -1,0 +1,5 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/podcast-db
+    username: podcast_client
+    password: hu8jmn3
