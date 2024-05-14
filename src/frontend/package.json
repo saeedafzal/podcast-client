@@ -1,0 +1,35 @@
+{
+  "name": "frontend",
+  "version": "0.0.1",
+  "description": "Podcast client.",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "vite dev",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/saeedafzal/podcast-client.git"
+  },
+  "author": "Saeed Afzal",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/saeedafzal/podcast-client/issues"
+  },
+  "homepage": "https://github.com/saeedafzal/podcast-client#readme",
+  "dependencies": {
+    "@nanostores/react": "^0.7.2",
+    "@nanostores/router": "^0.15.0",
+    "nanostores": "^0.10.3",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.2",
+    "@types/react-dom": "^18.3.0",
+    "@vitejs/plugin-react": "^4.2.1",
+    "typescript": "^5.4.5",
+    "vite": "^5.2.11"
+  }
+}
