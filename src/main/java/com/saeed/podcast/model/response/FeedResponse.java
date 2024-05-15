@@ -6,6 +6,7 @@ import lombok.Data;
 @Data
 @Builder
 public class FeedResponse {
+    private String feedId;
     private String title;
     private String description;
     private String imageUrl;

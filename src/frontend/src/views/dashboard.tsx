@@ -36,6 +36,7 @@ const Dashboard = () => {
     return <>
         <button onClick={() => dialogRef.current!.showModal()}>Add Feed</button>
         <h3>Feeds</h3>
+
         {
             feedsLoading ?
                 <FeedsLoading/> :

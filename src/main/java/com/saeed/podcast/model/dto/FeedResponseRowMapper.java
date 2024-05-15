@@ -11,6 +11,7 @@ public class FeedResponseRowMapper implements RowMapper<FeedResponse> {
     @Override
     public FeedResponse mapRow(ResultSet rs, int rowNum) throws SQLException {
         return FeedResponse.builder()
+            .feedId(rs.getString("feed_id"))
             .title(rs.getString("title"))
             .description(rs.getString("description"))
             .imageUrl(rs.getString("image_src"))

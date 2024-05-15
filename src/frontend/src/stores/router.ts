@@ -1,5 +1,6 @@
 import { createRouter } from "@nanostores/router";
 
 export const $router = createRouter({
-    dashboard: "/"
+    dashboard: "/",
+    episodes: "/:feed_id"
 });

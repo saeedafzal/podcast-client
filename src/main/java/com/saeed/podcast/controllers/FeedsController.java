@@ -1,6 +1,7 @@
 package com.saeed.podcast.controllers;
 
 import com.saeed.podcast.model.request.FeedRequest;
+import com.saeed.podcast.model.response.EpisodeResponse;
 import com.saeed.podcast.model.response.FeedResponse;
 import com.saeed.podcast.service.FeedsService;
 import lombok.RequiredArgsConstructor;
@@ -29,5 +30,11 @@ public class FeedsController {
     public List<FeedResponse> getAllFeeds() {
         log.info("Received request to get all feeds.");
         return feedsService.getAllFeeds();
+    }
+
+    @GetMapping("/episodes/{feedId}")
+    public List<EpisodeResponse> getEpisodesFromFeed(@PathVariable String feedId) {
+        log.info("Received request to get episodes from feed: {}", feedId);
+        return feedsService.getEpisodesFromFeed(feedId);
     }
 }

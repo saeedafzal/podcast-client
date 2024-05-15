@@ -1,6 +1,7 @@
 import { useStore } from "@nanostores/react";
 import { $router } from "../stores/router.ts";
 import Dashboard from "../views/dashboard.tsx";
+import Episodes from "../views/episodes.tsx";
 
 const Layout = () => {
     const page = useStore($router);
@@ -11,7 +12,9 @@ const Layout = () => {
 
     switch (page.route) {
         case "dashboard":
-            return <Dashboard/>
+            return <Dashboard/>;
+        case "episodes":
+            return <Episodes feedId={page.params.feed_id} />;
     }
 };
 
