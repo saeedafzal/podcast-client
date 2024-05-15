@@ -36,3 +36,5 @@ build/
 
 ### Web ###
 node_modules
+dist
+static
